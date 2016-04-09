@@ -1,27 +1,23 @@
-$gray: #eee;
-
 md-content.md-default-theme {
   background-color: $gray;
 }
 md-card {
   background-color: #fff;
-  h2:first-of-type {
-    margin-top: 0;
-  }
 }
-md-toolbar {
-  .md-button.md-default-theme {
-    border-radius: 99%; // round toolbar buttons
-  }
+md-card h2:first-of-type {
+  margin-top: 0;
+}
+md-toolbar .md-button.md-default-theme {
+  border-radius: 99%;
 }
 h2 {
   font-weight: 400;
 }
 .md-toolbar-tools-bottom {
   font-size: small;
-  & :last-child {
-    opacity: 0.8;
-  }
+}
+.md-toolbar-tools-bottom :last-child {
+  opacity: 0.8;
 }
 md-toolbar:not(.md-hue-1),
 .md-fab {
@@ -29,10 +25,10 @@ md-toolbar:not(.md-hue-1),
 }
 md-sidenav {
   fill: #737373;
-  ng-md-icon {
-    position: relative;
-    top: 5px; // adjust for svg viewbox
-  }
+}
+md-sidenav ng-md-icon {
+  position: relative;
+  top: 5px;
 }
 .user-avatar {
   border-radius: 99%;
